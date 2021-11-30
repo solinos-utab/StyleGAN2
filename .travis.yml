@@ -47,5 +47,6 @@ build:
     - script:
         name: echo python information
         code: |
+          lscpu
           echo "python version $(python --version) running"
           echo "pip version $(pip --version) running"
